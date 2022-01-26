@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .caixa {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+        }
+        .zona {
+            height: 200px;
+            width: 200px;
+            border:rgb(15, 14, 13) 2px solid;
+        }
+    </style>
+</head>
+<body> <!--dropzone - Define o que acontece quando o elemento arrastado é solto neste elemento.-->
+    <div class="caixa" draggable="true"></div> <!--draggable = arrastável-->
+    
+    <div class="zona" dropzone="copy"></div> <!-- zona que recebe o conteúdo arrastável copiado ou movido-->
+    <!--Esse atributo global dropzone ainda não está funcionando no html 5-->                                       
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul> <!--data-* - Usado para armazenar dados em um elemento. No lugar do (*) deve definir um nome. -->
+        <li data-id="1" data-mail="dvppeixoto@gmail.com">Diego Peixoto</li>
+        <li data-id="2" data-mail="thamycambe@gmail.com">Thamy Cambé</li>
+        <!--Na página fica transparente para o usuário. só é possível visualizar se inspecionar a página. para utilizar
+            esse atributo global, vamos testá-lo utilizando javascript na tag de script. -->
+    </ul>
+             <!-- com esse script javascript permite que visualizemos os dados na aba console do inspecionar a página-->
+    <script> 
+        document.querySelectorAll('li').forEach(liEl => {
+            console.log(liEl.dataset);
+        });
+    </script>
+</body>
+</html>
